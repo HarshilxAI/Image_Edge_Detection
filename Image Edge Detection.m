@@ -9,7 +9,6 @@ if size(I, 3) == 3
 else
     Igray = I;
 end
-
 BW_sobel   = edge(Igray, 'sobel');
 BW_prewitt = edge(Igray, 'prewitt');
 BW_roberts = edge(Igray, 'roberts');
@@ -63,3 +62,4 @@ title('Gradient Magnitude');
 subplot(2,4,8);
 imshow(BW_manual_sobel);
 title('Manual Sobel');
+
